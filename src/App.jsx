@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout'
 import Dashboard from './pages/Dashboard'
 import Aktivitas from './pages/Aktivitas'
 import Anggaran from './pages/Anggaran'
+import Plans from './pages/Plans'
 
 // Halaman sementara
 const Placeholder = ({ title }) => (
@@ -20,7 +21,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/aktivitas" element={<Aktivitas />} />
           <Route path="/anggaran" element={<Anggaran />} />
-          <Route path="/plans" element={<Placeholder title="Plans" />} />
+          <Route path="/plans" element={<Plans />} />
           <Route path="/archives" element={<Placeholder title="Archives" />} />
           <Route path="/reserve" element={<Placeholder title="Reserve" />} />
           <Route path="/laporan" element={<Placeholder title="Laporan" />} />
