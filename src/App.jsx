@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
+import Dashboard from './pages/Dashboard'
 
 // Halaman sementara
 const Placeholder = ({ title }) => (
@@ -14,7 +15,7 @@ export default function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<Placeholder title="Dashboard" />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/aktivitas" element={<Placeholder title="Aktivitas" />} />
           <Route path="/anggaran" element={<Placeholder title="Anggaran" />} />
           <Route path="/plans" element={<Placeholder title="Plans" />} />
